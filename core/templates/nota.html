@@ -1,0 +1,53 @@
+	{% extends 'base.html' %}
+{% block content %}
+	{{id}}
+	<!-- <div id="app">				
+		<section v-if="errored">
+		<p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
+		</section>
+
+		<section v-else>
+		<div v-if="loading">Loading...</div>
+
+		<div
+		  v-else
+		  v-for="student in info.results"
+		  class="student">
+		<div class="card blue-grey darken-1">
+	        <div class="card-content white-text">
+	          <span class="card-title">[[ student.name ]]</span>			         
+	        </div>
+        </div>
+		  
+		</div>
+
+		</section>
+	</div>	
+
+	<script type="text/javascript">
+		new Vue({
+		  delimiters: ['[[', ']]'],
+		  el: '#app',
+		  data () {
+		    return {
+		      info: null,
+		      loading: true,
+		      errored: false
+		    }
+		  },
+		  mounted () {
+		    axios
+		      .get('http://localhost:8000/grades/')
+		      .then(response => {
+		      	console.log(response.data.results)
+		        this.info = response.data
+		      })
+		      .catch(error => {
+		        console.log(error)
+		        this.errored = true
+		      })
+		      .finally(() => this.loading = false)
+		  }
+		})
+	</script> -->
+{% endblock %}
